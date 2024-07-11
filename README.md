@@ -19,8 +19,6 @@ You can see a live demo of the project [here](https://blog-dynamic-routing-next.
 ## Tech Stack
  - Next.js
  - TailwindCSS
- - React Router DOM
- - Axios
 
 ## Installation
 
