@@ -2,7 +2,6 @@ import Link from "next/link";
 
 async function getBlogs() {
   const response = await fetch(
-    // `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API_KEY}`
     `https://dummyapi.online/api/blogposts`
   );
   if (!response.status) {
@@ -12,7 +11,7 @@ async function getBlogs() {
   return data;
 }
 
-export default async function Home({ params }) {
+export default async function Home() {
   const blogs = await getBlogs();
   console.log(blogs);
   return (
